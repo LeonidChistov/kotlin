@@ -76,6 +76,11 @@ public fun ByteArray.toString(charset: String): String = String(this, charset)
 public fun ByteArray.toString(charset: Charset): String = String(this, charset)
 
 /**
+ * Converts the contents of this character array to a string.
+ */
+public fun CharArray.toString(): String = String(this)
+
+/**
  * Returns an array containing the elements of this collection.
  */
 [Intrinsic("kotlin.collections.copyToArray")] public fun <reified T> Collection<T>.copyToArray(): Array<T> =
